@@ -8,17 +8,19 @@ The update rewrites the unit's whole system. If the ignition turns off or the ba
 
 ## Check your version first
 
-On the car's screen: **Settings → System → About → Version Info**. The window shows three lines. Two of them matter:
+On the car's screen: **Settings → System → About → Version Information**. A window with three lines opens. Two of them matter:
 
 - **OS Version is …**: the main system.
 - **Fail Safe Version is …**: the backup system the unit starts when the main one is broken. The Store's last-resort recovery relies on it.
 
-Both must show **74.00.324A**.
+Both must show **74.00.324**. The screen leaves out the final **A**: `74.00.324 EU N` is 74.00.324A, European version.
+
+![Version Information on a unit with 74.00.324A: OS Version is 74.00.324 EU N, Fail Safe Version is 74.00.324](./img/version-info.png)
 
 | OS Version | Fail Safe Version | What to do |
 |---|---|---|
-| 74.00.324A | 74.00.324A | You are done. Go to [[install-store|Install the Store]]. |
-| 74.00.324A | older, or "Not Available" | Follow this guide anyway. The update writes the fail-safe system too. |
+| 74.00.324 | 74.00.324 | You are done. Go to [[install-store|Install the Store]]. |
+| 74.00.324 | older, or "Not Available" | Follow this guide anyway. The update writes the fail-safe system too. |
 | 70.00.335 or later | anything | Follow this guide. |
 | older than 70.00.335 | anything | These units first need a separate Fail-safe package. This guide does not cover that case. |
 
@@ -161,7 +163,7 @@ Steps 14–21 of the bulletin install a separate Fail Safe Package. Mazda droppe
 25. At 100 % the screen asks to restart. **Do not start the engine.** Switch the ignition **off** without pressing any pedal.
 26. Take out the stick. Close all doors, lock the car with the remote, take all keys 5 metres away, and wait **3 minutes**.
 27. Unlock with the remote and switch to **ACC** (START once, no pedal). Touch nothing for **one minute** while the unit sets itself up.
-28. Check **Settings → System → About → Version Info**: both **OS Version** and **Fail Safe Version** show **74.00.324A**.
+28. Check **Settings → System → About → Version Information**: both **OS Version** and **Fail Safe Version** show **74.00.324** (see the [picture](#check-your-version-first)).
 29. Switch the ignition **off**.
 30. Put the navigation SD card back. Open the map: if the position is wrong, drive about 50 metres at 15 km/h or more until it corrects itself.
 
