@@ -18,7 +18,7 @@ features:
     details: Format it the way the car reads it.
     link: /guides/usb-stick
   - title: Install the Store
-    details: One stick, once. Then everything installs from the car's screen.
+    details: One stick, once. Then everything installs from the car's screen, online through your phone's hotspot.
     link: /guides/install-store
   - title: Link your car
     details: Connect the car to your account to see which apps fit it.

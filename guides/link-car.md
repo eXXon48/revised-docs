@@ -2,6 +2,8 @@
 
 Linking connects the car to your account at cmu-revised.com. The site then shows which apps fit your car.
 
+The car must be online for this: see [[install-store#online|Connect the car to the internet]].
+
 1. On the car: **Apps → Revised Store → Link this car**. A QR code and a short code appear.
 2. Scan the QR code with your phone, or open the address shown on the screen and type the code.
 3. Sign in, or [create an account](https://cmu-revised.com/signup), and choose **Link**.
