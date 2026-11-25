@@ -89,63 +89,84 @@ Either way, check the MD5 of the final `.up` file.
 
 Write down your radio favourites now if you want them back.
 
+## Manual or automatic: which pedal
+
+The steps below use two pedal actions. Which pedal depends on your gearbox:
+
+| Your car | Pedal |
+|---|---|
+| **Automatic** (AT) | **brake** pedal |
+| **Manual** (MT) | **clutch** pedal |
+
+- **ACC without the engine**: press the START/STOP button once **without** touching the pedal. The START button light turns amber and the instrument cluster stays dark. If you press the pedal while pushing START, the engine starts: do not.
+- **Keep ACC alive**: press the pedal and let it go, **without** touching START. The engine does not start. This only resets the car's 25-minute timer.
+
 ## Keep the power on
 
-The update takes about 40–50 minutes. For all of it:
+The update itself takes about 40 minutes, the whole procedure about an hour.
 
-- Keep the ignition in **ACC**. Not ON, and never start the engine.
-  To get ACC, press the START button once **without** pressing the brake (automatic) or the clutch (manual).
+- Keep the ignition in **ACC** all the time. Not ON, and never start the engine.
+- The car turns ACC off by itself after **25 minutes**. Press and release the pedal (see above) before that happens. Set a timer on your phone for 20 minutes.
 - Connect a battery charger in power-supply mode if you have one. A weak battery is the most common way to ruin an update.
 - Switch off what draws current: air conditioning fan, rear window heater, interior lights.
-- The car turns ACC off by itself after 25 minutes. **Press and release the brake pedal (automatic) or the clutch pedal (manual) every 15–20 minutes** to restart that timer. Set a timer on your phone.
+
+When to press the pedal during the update:
+
+```mermaid
+flowchart TB
+  S(("Start<br/>0 %")) --> P1["Press and release<br/>the pedal"]
+  P1 --> L1["You can<br/>leave the car"]
+  L1 --> T["About 20 minutes<br/>after the start"]
+  T --> P2["Press and release<br/>the pedal again"]
+  P2 --> L2["You can<br/>leave the car"]
+  L2 --> F(("Finish<br/>100 %"))
+```
+
+If the update runs past 40 minutes, press the pedal once more 20 minutes after the last time.
 
 ## Run the update
 
-### 1. Get the unit ready
+The steps follow Mazda's service bulletin and keep its numbering, so you can compare them side by side.
 
-1. Switch the ignition off.
-2. Take out the navigation SD card. Unplug everything from the USB and AUX ports. Disconnect phones.
-3. Switch to ACC. Wait until the system has started, then turn on the FM radio.
+### Prepare the unit (steps 1–8)
 
-### 2. Clear the unit's fault memory
+1. With the ignition **off**: take out the navigation SD card. Unplug everything from the USB and AUX ports. Disconnect phones.
+2. Switch to **ACC** (START once, no pedal). Wait until the system has started.
+3. Turn on the radio: **AM, FM or DAB**.
+4. Press and hold **Music + Favourites + Mute** on the commander together for 2–5 seconds. The **Diagnostic Test** screen opens.
+5. Enter **3** with the touchscreen or the commander knob, choose **ENTER**, then **CLEAR**.
+6. Enter **2**, choose **ENTER**. This clears the unit's stored fault codes. Choose **CLEAR**, then **EXIT**.
+7. Switch the ignition **off**. Close all doors, lock the car with the remote, take **all** keys at least **5 metres** away from the car, and wait **3 minutes**. The unit goes fully to sleep.
+8. Unlock the car with the remote and switch to **ACC** (START once, no pedal).
 
-Mazda does this before every update so old fault codes do not get in the way.
+### Start the update (steps 9–13)
 
-1. Press and hold **Music + Favourites + Mute** on the commander together for 2–5 seconds. A diagnostic screen opens.
-2. Enter **3**, choose **ENTER**, then **CLEAR**.
-3. Enter **2**, choose **ENTER**, then **CLEAR**, then **EXIT**.
+9. Plug the stick into **one** USB port. Leave the other USB port and the SD slot empty.
+10. A message shows briefly that the stick was found. No message: unplug the stick and go back to step 9.
+11. Press and hold **Music + Favourites + Mute** for 2–5 seconds again.
+12. Enter **99** and choose **ENTER**.
+13. Choose **Search**.
 
-### 3. Let the unit sleep
+Steps 14–21 of the bulletin install a separate Fail Safe Package. Mazda dropped it from 70.00.335 on, so 74.00.324A skips them.
 
-1. Switch the ignition off.
-2. Close all doors, lock the car with the remote, and take all keys at least 5 metres away.
-3. Wait 3 minutes. The unit goes fully to sleep.
+### Install (steps 22–24)
 
-### 4. Start the update
+22. Choose **Update Package**.
+    (A unit on 70.00.110 or older shows **Reinstallation Package** instead.)
+23. Choose **Update** (or **Install** on older units).
+24. The screen shows "Preparing to update", goes black, then white, then a progress bar runs from 0 to 100 %. About **40 minutes**.
+    - **Press and release the pedal now**, at the start, and again after about 20 minutes (see the chart above).
+    - The bar stops for several minutes around 12 % and 91 %, and again between 98 % and 100 %. That is normal. Wait.
+    - The screen can get dark. Never switch the ignition off and never start the engine.
 
-1. Unlock the car and switch to ACC.
-2. Plug the stick into a USB port. Leave the other port empty. A message shows that the stick was found.
-3. Hold **Music + Favourites + Mute** for 2–5 seconds again.
-4. Enter **99** and choose **ENTER**.
-5. Choose **Search**. The update on the stick is listed.
-6. Choose **Update Package**, then **Update**.
+### Finish (steps 25–30) {#finish}
 
-### 5. Wait
-
-The screen shows "Preparing", then goes black, then white, then shows a progress bar from 0 to 100 %.
-
-- The bar stops for several minutes around 12 % and 91 %, and again near the end. That is normal. Wait.
-- The screen can get dark. It still says not to restart the car: do not.
-- Keep pressing the brake or clutch pedal every 15–20 minutes.
-
-### 6. Finish
-
-1. At 100 % the screen asks to restart. **Do not start the engine.** Switch the ignition off without pressing any pedal.
-2. Take out the stick. Lock the car, take the keys 5 metres away, and wait 3 minutes again.
-3. Unlock, switch to ACC, and touch nothing for one minute while the unit sets itself up.
-4. Check **Settings → System → About → Version Info**: both **OS Version** and **Fail Safe Version** show **74.00.324A**.
-5. Optional: open the diagnostic screen, enter **3**, **ENTER**, and check that no fault codes are left.
-6. Put the navigation SD card back. Open the map: if the position is wrong, drive a short way at 15 km/h or more until it corrects itself.
+25. At 100 % the screen asks to restart. **Do not start the engine.** Switch the ignition **off** without pressing any pedal.
+26. Take out the stick. Close all doors, lock the car with the remote, take all keys 5 metres away, and wait **3 minutes**.
+27. Unlock with the remote and switch to **ACC** (START once, no pedal). Touch nothing for **one minute** while the unit sets itself up.
+28. Check **Settings → System → About → Version Info**: both **OS Version** and **Fail Safe Version** show **74.00.324A**.
+29. Switch the ignition **off**.
+30. Put the navigation SD card back. Open the map: if the position is wrong, drive about 50 metres at 15 km/h or more until it corrects itself.
 
 Then [[install-store|Install the Store]].
 
@@ -153,15 +174,19 @@ Then [[install-store|Install the Store]].
 
 **The car switched off during the update.** Switch back to ACC. The update continues on its own. If nothing moves after 1–2 minutes and the stick has a light that is not blinking, take the stick out and plug it in again.
 
-**The screen stays white or freezes and never finishes.**
+**The update does not finish: the screen stays white or freezes.**
 
-1. Switch the ignition off. Do not start the engine.
-2. Wait until the screen is black, then take out the stick.
-3. Remove the **ROOM** fuse in the engine-bay fuse box, wait one minute, and put it back.
-4. Switch to ACC. Do not start the engine.
-5. When the unit shows its update screen, plug the stick in again. The update starts again.
-6. Then go on with [Finish](#_6-finish).
+1. Switch the ignition **off**. Do not start the engine.
+2. Wait until the screen is black.
+3. Take out the stick.
+4. Remove the **ROOM** fuse in the engine-bay fuse box and wait one minute.
+5. Put the ROOM fuse back.
+6. Switch to **ACC**. Not ON, do not start the engine.
+7. Wait for the unit's update screen.
+8. Plug the stick in again.
+9. Check that the update starts again.
+10. When it reaches 100 %, go on from [step 25](#finish).
 
 ::: tip Source
-These steps follow Mazda's dealer update procedure for Mazda Connect 70.00.335 and later, in our own words. Mazda's own bulletin is the reference.
+These steps follow Mazda's service bulletin "MZD Connect CMU software update procedure" (worldwide version), in our own words and with the same step numbers. The bulletin is the reference.
 :::

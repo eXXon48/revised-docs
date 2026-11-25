@@ -1,7 +1,8 @@
 import { defineConfig } from 'vitepress';
+import { withMermaid } from 'vitepress-plugin-mermaid';
 import wikilinks from './wikilinks';
 
-export default defineConfig({
+export default withMermaid(defineConfig({
   title: 'CMU-REvised Docs',
   description: 'How to update, prepare and mod a Mazda Connect (CMU150) unit.',
   lang: 'en',
@@ -31,4 +32,4 @@ export default defineConfig({
     search: { provider: 'local' },
     footer: { message: 'Not affiliated with Mazda. Modding your car is at your own risk.' },
   },
-});
+}));
