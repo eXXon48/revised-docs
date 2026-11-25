@@ -101,7 +101,7 @@ The steps below use two pedal actions. Which pedal depends on your gearbox:
 | **Manual** (MT) | **clutch** pedal |
 
 - **ACC without the engine**: press the START/STOP button once **without** touching the pedal. The START button light turns amber and the instrument cluster stays dark. If you press the pedal while pushing START, the engine starts: do not.
-- **Keep ACC alive**: press the pedal and let it go, **without** touching START. The engine does not start. This only resets the car's 25-minute timer.
+- **Keep ACC alive**: press the pedal and let it go, **without** touching START. The engine does not start. This only resets the car's 25-minute timer. Opening and closing the driver's door does the same.
 
 ## Keep the power on
 
@@ -157,9 +157,14 @@ Steps 14–21 of the bulletin install a separate Fail Safe Package. Mazda droppe
 
 ### Install (steps 22–24)
 
-22. Choose **Update Package**.
+22. Choose **Update Package**. The first line, **Software Update (Current)**, is the version already on the unit.
     (A unit on 70.00.110 or older shows **Reinstallation Package** instead.)
-23. Choose **Update** (or **Install** on older units).
+
+    ![Avail. Software Update Packages: Software Update (Current) 74.00.324, Update Package 74.00.324](./img/update-packages.png)
+
+23. The screen shows the current and the new version and reminds you of the pedal. Choose **Update** (or **Install** on older units).
+
+    ![Current: 74.00.324, New: 74.00.324. Would you like to Update? Back / Update](./img/update-confirm.png)
 24. The screen shows "Preparing to update", goes black, then white, then a progress bar runs from 0 to 100 %. About **40 minutes**.
     - **Press and release the pedal now**, at the start, and again after about 20 minutes (see the chart above).
     - The bar stops for several minutes around 12 % and 91 %, and again between 98 % and 100 %. That is normal. Wait.
