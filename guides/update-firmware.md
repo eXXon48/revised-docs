@@ -36,25 +36,27 @@ A damaged or altered file can break the unit. Before you install, check that you
 
 Open a terminal in the folder with the file and run the command for your system.
 
-**Windows** (Command Prompt or PowerShell):
+Each command compares the MD5 for you. It takes a minute on a 2.4 GB file.
 
-```sh
-certutil -hashfile cmu150_EU_74.00.324A_update.up MD5
+**Windows** (PowerShell: right-click the Start button → Terminal):
+
+```powershell
+if ((Get-FileHash cmu150_EU_74.00.324A_update.up -Algorithm MD5).Hash -eq '9b841bc807a5010a8652bb3b9e894f91') { 'OK' } else { 'WRONG FILE' }
 ```
 
 **macOS** (Terminal):
 
 ```sh
-md5 cmu150_EU_74.00.324A_update.up
+[ "$(md5 -q cmu150_EU_74.00.324A_update.up)" = 9b841bc807a5010a8652bb3b9e894f91 ] && echo OK || echo "WRONG FILE"
 ```
 
 **Linux**:
 
 ```sh
-md5sum cmu150_EU_74.00.324A_update.up
+echo "9b841bc807a5010a8652bb3b9e894f91  cmu150_EU_74.00.324A_update.up" | md5sum -c
 ```
 
-The output must show `9b841bc807a5010a8652bb3b9e894f91`. Upper or lower case does not matter.
+You must see **OK**. Anything else (`WRONG FILE`, `FAILED`, or an error that the file is not found) means: stop.
 
 If the MD5 or the size differ, **do not install the file**. Get another copy and check it again.
 
