@@ -10,7 +10,7 @@ export default defineConfig({
   head: [['link', { rel: 'icon', href: '/logo-mark.svg' }]],
   markdown: { config: (md) => md.use(wikilinks) },
   themeConfig: {
-    logo: '/logo-mark.svg',
+    logo: { light: '/logo-mark-light.svg', dark: '/logo-mark.svg' },
     siteTitle: false,
     nav: [
       { text: 'Guides', link: '/guides/update-firmware' },

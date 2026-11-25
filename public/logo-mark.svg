@@ -19,7 +19,6 @@
       <feComposite in="SourceGraphic" in2="blur" operator="over" />
     </filter>
   </defs>
-  <rect width="800" height="250" fill="#0E1117" />
   <g opacity="0.18" stroke="#B0B5BC" fill="none" stroke-linecap="round" stroke-linejoin="round">
     <path d="M 120,90 Q 60,60 -10,130" stroke-width="2" />
     <path d="M 680,90 Q 740,60 810,130" stroke-width="2" />
