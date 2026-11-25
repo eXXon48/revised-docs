@@ -132,9 +132,11 @@ The steps follow Mazda's service bulletin and keep its numbering, so you can com
 1. With the ignition **off**: take out the navigation SD card. Unplug everything from the USB and AUX ports. Disconnect phones.
 2. Switch to **ACC** (START once, no pedal). Wait until the system has started.
 3. Turn on the radio: **AM, FM or DAB**.
-4. Press and hold **Music + Favourites + Mute** on the commander together for 2–5 seconds. The **Diagnostic Test** screen opens.
+4. Press and hold **Music + Favourites + Mute** on the commander together for 2–5 seconds. The diagnostic **Test Screen** opens.
 5. Enter **3** with the touchscreen or the commander knob, choose **ENTER**, then **CLEAR**.
-6. Enter **2**, choose **ENTER**. This clears the unit's stored fault codes. Choose **CLEAR**, then **EXIT**.
+6. Enter **2**. The box on the right reads **Clear DTC**. Choose **ENTER**: this clears the unit's stored fault codes. Choose **CLEAR**, then **EXIT**.
+
+   ![Test Screen with 2 entered: Clear DTC - Not Started](./img/diag-clear-dtc.png)
 7. Switch the ignition **off**. Close all doors, lock the car with the remote, take **all** keys at least **5 metres** away from the car, and wait **3 minutes**. The unit goes fully to sleep.
 8. Unlock the car with the remote and switch to **ACC** (START once, no pedal).
 
@@ -143,8 +145,13 @@ The steps follow Mazda's service bulletin and keep its numbering, so you can com
 9. Plug the stick into **one** USB port. Leave the other USB port and the SD slot empty.
 10. A message shows briefly that the stick was found. No message: unplug the stick and go back to step 9.
 11. Press and hold **Music + Favourites + Mute** for 2–5 seconds again.
-12. Enter **99** and choose **ENTER**.
-13. Choose **Search**.
+12. Enter **99**. The box on the right reads **System Update**. Choose **ENTER**.
+
+    ![Test Screen with 99 entered: System Update - Not Started](./img/diag-99.png)
+
+13. The unit asks to search the USB device for update packages. Choose **Search**.
+
+    ![Search for System Update packages on your USB device? Cancel / Search](./img/update-search.png)
 
 Steps 14–21 of the bulletin install a separate Fail Safe Package. Mazda dropped it from 70.00.335 on, so 74.00.324A skips them.
 
