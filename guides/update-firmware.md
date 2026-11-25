@@ -101,7 +101,7 @@ The steps below use two pedal actions. Which pedal depends on your gearbox:
 | **Manual** (MT) | **clutch** pedal |
 
 - **ACC without the engine**: press the START/STOP button once **without** touching the pedal. The START button light turns amber and the instrument cluster stays dark. If you press the pedal while pushing START, the engine starts: do not.
-- **Keep ACC alive**: press the pedal and let it go, **without** touching START. The engine does not start. This only resets the car's 25-minute timer. Opening and closing the driver's door does the same.
+- **Keep ACC alive**: press the pedal and let it go, **without** touching START. The engine does not start. This only resets the car's 25-minute timer.
 
 ## Keep the power on
 
