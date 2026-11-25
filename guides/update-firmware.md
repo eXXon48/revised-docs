@@ -58,7 +58,12 @@ The output must show `9b841bc807a5010a8652bb3b9e894f91`. Upper or lower case doe
 
 If the MD5 or the size differ, **do not install the file**. Get another copy and check it again.
 
-The file must end in **`.up`**. If yours ends in `.zip`, rename it to `.up`; do not unzip it.
+The file must end in **`.up`**. If you got a `.zip`:
+
+- **The zip contains `cmu150_EU_74.00.324A_update.up`** (often with instructions next to it): unzip it and use only the `.up` file.
+- **The zip contains no `.up` file, and the zip itself is 2 432 208 800 bytes:** it is the update itself under the wrong name. Do not unzip it, rename it to `cmu150_EU_74.00.324A_update.up`.
+
+Either way, check the MD5 of the final `.up` file.
 
 ## Put it on a stick
 
