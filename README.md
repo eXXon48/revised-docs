@@ -10,4 +10,4 @@ npm run dev     # local preview
 npm run build   # static site in .vitepress/dist
 ```
 
-Hosting: Cloudflare Pages, build command `npm run build`, output directory `.vitepress/dist`.
+Hosting: Cloudflare Workers (static assets, `wrangler.jsonc`): build `npm run build`, deploy `npx wrangler deploy`.
