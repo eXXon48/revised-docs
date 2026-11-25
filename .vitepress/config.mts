@@ -29,6 +29,10 @@ export default withMermaid(defineConfig({
           { text: 'Link your car', link: '/guides/link-car' },
         ],
       },
+      {
+        text: 'Make mods',
+        items: [{ text: 'Build with an AI agent', link: '/guides/build-with-ai' }],
+      },
     ],
     outline: { level: [2, 3], label: 'On this page' },
     search: { provider: 'local' },

@@ -1,0 +1,20 @@
+# CMU-REvised Docs
+
+> How to update, prepare and mod a Mazda Connect (CMU150) head unit with the Revised Store. The Store needs firmware 74.00.324A. The unit's screen runs Opera 12 (Presto, 2012): mods use ES5 JavaScript and old CSS only.
+
+## Guides
+
+- [Update to 74.00.324A](https://docs.cmu-revised.com/guides/update-firmware): bring the unit to the firmware the Store is built for
+- [Prepare a USB stick](https://docs.cmu-revised.com/guides/usb-stick): format a stick the way the car reads it
+- [Install the Store](https://docs.cmu-revised.com/guides/install-store): one-time install from a USB stick, then online through a phone hotspot
+- [Link your car](https://docs.cmu-revised.com/guides/link-car): connect the car to an account
+
+## Make mods
+
+- [Build with an AI agent](https://docs.cmu-revised.com/guides/build-with-ai): what to give a coding agent and what it must never do on a real car
+- [revised-sdk AGENTS.md](https://github.com/eXXon48/revised-sdk/blob/main/AGENTS.md): setup, package format, testing and hard rules for coding agents
+
+## Optional
+
+- [revised-sdk guide](https://github.com/eXXon48/revised-sdk/blob/main/docs/guide.md): lint rules, the RevisedHMI API and every CLI command
+- [Store apps](https://cmu-revised.com/apps): the published package list
