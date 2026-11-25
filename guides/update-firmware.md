@@ -8,11 +8,21 @@ The update rewrites the unit's whole system. If the ignition turns off or the ba
 
 ## Check your version first
 
-On the car's screen: **Settings → System → About → Version Info**.
+On the car's screen: **Settings → System → About → Version Info**. The window shows three lines. Two of them matter:
 
-- Shows **74.00.324A**: you are done, go to [[install-store|Install the Store]].
-- Shows an older **70.00.335** or later: follow this guide.
-- Shows something older than **70.00.335**: these units first need a separate Fail-safe package. This guide does not cover that case.
+- **OS Version is …**: the main system.
+- **Fail Safe Version is …**: the backup system the unit starts when the main one is broken. The Store's last-resort recovery relies on it.
+
+Both must show **74.00.324A**.
+
+| OS Version | Fail Safe Version | What to do |
+|---|---|---|
+| 74.00.324A | 74.00.324A | You are done. Go to [[install-store|Install the Store]]. |
+| 74.00.324A | older, or "Not Available" | Follow this guide anyway. The update writes the fail-safe system too. |
+| 70.00.335 or later | anything | Follow this guide. |
+| older than 70.00.335 | anything | These units first need a separate Fail-safe package. This guide does not cover that case. |
+
+Check both lines again after the update.
 
 ## Get the update file
 
@@ -133,7 +143,7 @@ The screen shows "Preparing", then goes black, then white, then shows a progress
 1. At 100 % the screen asks to restart. **Do not start the engine.** Switch the ignition off without pressing any pedal.
 2. Take out the stick. Lock the car, take the keys 5 metres away, and wait 3 minutes again.
 3. Unlock, switch to ACC, and touch nothing for one minute while the unit sets itself up.
-4. Check **Settings → System → About → Version Info**: it shows **74.00.324A**.
+4. Check **Settings → System → About → Version Info**: both **OS Version** and **Fail Safe Version** show **74.00.324A**.
 5. Optional: open the diagnostic screen, enter **3**, **ENTER**, and check that no fault codes are left.
 6. Put the navigation SD card back. Open the map: if the position is wrong, drive a short way at 15 km/h or more until it corrects itself.
 
