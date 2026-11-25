@@ -113,13 +113,10 @@ The update itself takes about 40 minutes, the whole procedure about an hour.
 When to press the pedal during the update:
 
 ```mermaid
-flowchart TB
-  S(("Start<br/>0 %")) --> P1["Press and release<br/>the pedal"]
-  P1 --> L1["You can<br/>leave the car"]
-  L1 --> T["About 20 minutes<br/>after the start"]
-  T --> P2["Press and release<br/>the pedal again"]
-  P2 --> L2["You can<br/>leave the car"]
-  L2 --> F(("Finish<br/>100 %"))
+flowchart LR
+  S(["Start: 0 %"]) --> P1["Press the pedal<br/>then you can leave"]
+  P1 -- "about 20 min" --> P2["Press the pedal<br/>then you can leave"]
+  P2 --> F(["Finish: 100 %"])
 ```
 
 If the update runs past 40 minutes, press the pedal once more 20 minutes after the last time.

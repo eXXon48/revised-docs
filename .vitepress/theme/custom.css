@@ -13,3 +13,10 @@
 }
 .VPNavBarTitle .logo { height: 34px; }
 .vp-doc ol > li::marker { color: var(--vp-c-brand-1); font-weight: 600; }
+
+/* mermaid sizes label boxes for line-height 1.5; .vp-doc uses 1.75 and clips them */
+.vp-doc .mermaid foreignObject p,
+.vp-doc .mermaid foreignObject div { line-height: 1.5; margin: 0; }
+/* on phones keep labels readable: scroll sideways instead of shrinking */
+.vp-doc .mermaid { overflow-x: auto; }
+.vp-doc .mermaid svg { min-width: 560px; }

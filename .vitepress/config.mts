@@ -10,6 +10,8 @@ export default withMermaid(defineConfig({
   lastUpdated: true,
   head: [['link', { rel: 'icon', href: '/logo-mark.svg' }]],
   markdown: { config: (md) => md.use(wikilinks) },
+  // same font for measuring and drawing, or labels get clipped
+  mermaid: { themeVariables: { fontFamily: 'Inter, ui-sans-serif, system-ui, sans-serif' } },
   themeConfig: {
     logo: { light: '/logo-mark-light.svg', dark: '/logo-mark.svg' },
     siteTitle: false,
