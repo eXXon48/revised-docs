@@ -16,11 +16,9 @@ On the car's screen: **Settings → System → About → Version Info**.
 
 ## Get the update file
 
-Mazda gives the update files only to its dealers. We cannot host the file here: the firmware is Mazda's intellectual property.
+The firmware is Mazda's intellectual property. We do not host it and do not link to copies of it. Mazda gives the update files to its dealers: a Mazda dealer can install 74.00.324A for you.
 
-Owners share it in the firmware thread on the CX-5 owners' forum. Download it from there.
-
-Check that you have the right file, unchanged:
+If you already have the file, check that it is the right one, unchanged:
 
 | | |
 |---|---|
