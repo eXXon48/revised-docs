@@ -16,9 +16,17 @@ On the car's screen: **Settings → System → About → Version Info**.
 
 ## Get the update file
 
-The firmware is Mazda's intellectual property. We do not host it and do not link to copies of it. Mazda gives the update files to its dealers: a Mazda dealer can install 74.00.324A for you.
+The firmware is Mazda's intellectual property, so we cannot publish it here. A Mazda dealer can install 74.00.324A for you.
 
-If you already have the file, check that it is the right one, unchanged:
+Owners share the file freely. Search for its name, `cmu150_EU_74.00.324A_update.up`, with a search engine, on Reddit or on Mazda owners' forums.
+
+::: danger Never pay for the firmware
+Sites that sell it are after your money. The file is shared for free.
+:::
+
+## Check the MD5 before you install
+
+A damaged or altered file can break the unit. Before you install, check that your copy is exactly this one:
 
 | | |
 |---|---|
@@ -26,13 +34,29 @@ If you already have the file, check that it is the right one, unchanged:
 | Size | 2 432 208 800 bytes |
 | MD5 | `9b841bc807a5010a8652bb3b9e894f91` |
 
-Get the MD5 of your copy:
+Open a terminal in the folder with the file and run the command for your system.
 
-- Windows: `certutil -hashfile cmu150_EU_74.00.324A_update.up MD5`
-- macOS: `md5 cmu150_EU_74.00.324A_update.up`
-- Linux: `md5sum cmu150_EU_74.00.324A_update.up`
+**Windows** (Command Prompt or PowerShell):
 
-If the size or the MD5 differ, do not use the file. Download it again.
+```sh
+certutil -hashfile cmu150_EU_74.00.324A_update.up MD5
+```
+
+**macOS** (Terminal):
+
+```sh
+md5 cmu150_EU_74.00.324A_update.up
+```
+
+**Linux**:
+
+```sh
+md5sum cmu150_EU_74.00.324A_update.up
+```
+
+The output must show `9b841bc807a5010a8652bb3b9e894f91`. Upper or lower case does not matter.
+
+If the MD5 or the size differ, **do not install the file**. Get another copy and check it again.
 
 The file must end in **`.up`**. If yours ends in `.zip`, rename it to `.up`; do not unzip it.
 
