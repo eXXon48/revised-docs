@@ -5,11 +5,11 @@ hero:
   tagline: Update, prepare and mod a Mazda Connect (CMU150) unit, step by step.
   actions:
     - theme: brand
-      text: Update to 74.00.324A
+      text: I have a car
       link: /guides/update-firmware
     - theme: alt
-      text: Install the Store
-      link: /guides/install-store
+      text: I build mods
+      link: /develop/
 features:
   - title: Update the firmware
     details: Bring the unit to 74.00.324A, the version the Store is built for.
@@ -23,4 +23,10 @@ features:
   - title: Link your car
     details: Connect the car to your account to see which apps fit it.
     link: /guides/link-car
+  - title: Build with an AI agent
+    details: What to give a coding agent and what it must never do on a real car.
+    link: /develop/build-with-ai
+  - title: Reference
+    details: "How the unit works inside: hardware, boot, services, the screen, audio and vehicle data."
+    link: /research/
 ---

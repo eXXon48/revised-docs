@@ -12,6 +12,7 @@ The car's screen runs a web browser from 2012 (Opera 12, Presto engine). Code th
 2. Tell the agent: "Read `AGENTS.md` and follow it." The file says how to set up the build, how a package is made and tested, and which rules keep the car safe.
 3. Make your project with `revised-sdk new app <name>`. The new project gets its own `AGENTS.md`. Point the agent at that file too.
 4. Let the agent run `revised-sdk lint` after every change. Lint finds code the car's browser cannot run.
+5. For questions about the unit itself (services, partitions, D-Bus, the screen's framework), point the agent at the [Reference](/research/), or let it clone the [research-vault](https://github.com/eXXon48/research-vault) repository and read it locally.
 
 ## How to test
 

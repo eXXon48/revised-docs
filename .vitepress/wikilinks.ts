@@ -18,10 +18,12 @@ const pages: Record<string, string> = {
   'usb-stick': '/guides/usb-stick',
   'install-store': '/guides/install-store',
   'link-car': '/guides/link-car',
+  'build-with-ai': '/develop/build-with-ai',
 };
 
-export default function wikilinks(md: MarkdownIt) {
+export default function wikilinks(md: MarkdownIt, extra: Record<string, string> = {}) {
+  const all = { ...extra, ...pages };
   md.core.ruler.before('normalize', 'wikilinks', (state) => {
-    state.src = rewrite(state.src, pages);
+    state.src = rewrite(state.src, all);
   });
 }

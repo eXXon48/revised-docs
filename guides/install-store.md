@@ -48,3 +48,7 @@ See [[link-car|Link your car]].
 
 - Remove an app in the Store: the car goes back to how it was before.
 - If the car fails to start 3 times in a row, it rolls itself back. No stick needed.
+
+## How it works
+
+Where the Store and its apps live on the unit: [[Partitions and Storage]].

@@ -11,3 +11,7 @@ The car must be online for this: see [[install-store#online|Connect the car to t
 The code works for a few minutes. If it runs out, the car makes a new one.
 
 Next: pick apps in the Store on the car's screen, or [browse them on the site](https://cmu-revised.com/apps) first.
+
+## How it works
+
+How the unit reads the car's VIN: [[Vehicle VIN]].

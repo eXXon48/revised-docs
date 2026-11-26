@@ -201,3 +201,7 @@ Then [[install-store|Install the Store]].
 ::: tip Source
 These steps follow Mazda's service bulletin "MZD Connect CMU software update procedure" (worldwide version), in our own words and with the same step numbers. The bulletin is the reference.
 :::
+
+## How it works
+
+What the update writes and what it keeps: [[Firmware Update]], [[Partitions and Storage]].

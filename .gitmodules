@@ -1,0 +1,8 @@
+[submodule "external/research-vault"]
+	path = external/research-vault
+	url = https://github.com/eXXon48/research-vault
+	branch = main
+[submodule "external/revised-sdk"]
+	path = external/revised-sdk
+	url = https://github.com/eXXon48/revised-sdk
+	branch = main

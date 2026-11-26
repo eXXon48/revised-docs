@@ -9,10 +9,12 @@
 - [Install the Store](https://docs.cmu-revised.com/guides/install-store): one-time install from a USB stick, then online through a phone hotspot
 - [Link your car](https://docs.cmu-revised.com/guides/link-car): connect the car to an account
 
-## Make mods
+## Develop
 
-- [Build with an AI agent](https://docs.cmu-revised.com/guides/build-with-ai): what to give a coding agent and what it must never do on a real car
+- [Build with an AI agent](https://docs.cmu-revised.com/develop/build-with-ai): what to give a coding agent and what it must never do on a real car
 - [revised-sdk AGENTS.md](https://github.com/eXXon48/revised-sdk/blob/main/AGENTS.md): setup, package format, testing and hard rules for coding agents
+
+- [Reference](https://docs.cmu-revised.com/research/): how the CMU150 works inside: hardware, partitions, boot, SM services, HMI, audio, display and vehicle data
 
 ## Optional
 
